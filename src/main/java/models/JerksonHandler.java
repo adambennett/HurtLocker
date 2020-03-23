@@ -1,7 +1,5 @@
 package models;
 
-import models.*;
-
 import java.util.*;
 import java.util.regex.*;
 
@@ -89,6 +87,17 @@ public class JerksonHandler {
             output += "Errors         \t \t seen: " + this.errors + " times";
         }
         return output;
+    }
+
+    // For tests
+    public Map<Item, Integer> getFreq() { return freq; }
+    public Item getKeyFromMap(Item key) {
+        for (Item item : freq.keySet()) {
+            if (item.equals(key)) {
+                return item;
+            }
+        }
+        return null;
     }
 
 }

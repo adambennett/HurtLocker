@@ -3,7 +3,7 @@ import utilities.*;
 
 import java.util.*;
 
-public class Main {
+public class Application {
 
     public String readRawDataToString() throws Exception{
         ClassLoader classLoader = getClass().getClassLoader();
@@ -15,7 +15,7 @@ public class Main {
     }
 
     public static void main(String[] args) throws Exception {
-        Main main = new Main();
-        main.initialize();
+        Application application = new Application();
+        application.initialize();
     }
 }

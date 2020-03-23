@@ -44,7 +44,7 @@ public class Item {
     // Getters
     public String getName() { return name; }
     public String getExpiration() { return expiration; }
-    public Set<Map.Entry<Double, Integer>> getPrices() { return priceFreq.entrySet(); }
+    public HashSet<Map.Entry<Double, Integer>> getPrices() { return new HashSet<>(priceFreq.entrySet()); }
 
     public String printName() {
         int sum = 0;
